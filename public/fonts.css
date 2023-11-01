@@ -1,0 +1,171 @@
+/* PPTelegraf Fonts */
+
+@font-face {
+    font-family: 'PPTelegraf';
+    font-style: normal;
+    font-weight: 400; /* Regular */
+    src: url('./fonts/PPTelegraf-Regular.otf') format('opentype');
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'PPTelegraf';
+    font-style: italic;
+    font-weight: 400; /* Regular Oblique */
+    src: url('./fonts/PPTelegraf-RegularOblique.otf') format('opentype');
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'PPTelegraf';
+    font-style: italic;
+    font-weight: 400; /* Regular Slanted */
+    src: url('./fonts/PPTelegraf-RegularSlanted.otf') format('opentype');
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'PPTelegraf';
+    font-style: normal;
+    font-weight: 800; /* Ultrabold */
+    src: url('./fonts/PPTelegraf-Ultrabold.otf') format('opentype');
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'PPTelegraf';
+    font-style: italic;
+    font-weight: 800; /* Ultrabold Oblique */
+    src: url('./fonts/PPTelegraf-UltraboldOblique.otf') format('opentype');
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'PPTelegraf';
+    font-style: italic;
+    font-weight: 800; /* Ultrabold Slanted */
+    src: url('./fonts/PPTelegraf-UltraboldSlanted.otf') format('opentype');
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'PPTelegraf';
+    font-style: normal;
+    font-weight: 200; /* Ultralight */
+    src: url('./fonts/PPTelegraf-Ultralight.otf') format('opentype');
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'PPTelegraf';
+    font-style: italic;
+    font-weight: 200; /* Ultralight Oblique */
+    src: url('./fonts/PPTelegraf-UltralightOblique.otf') format('opentype');
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'PPTelegraf';
+    font-style: italic;
+    font-weight: 200; /* Ultralight Slanted */
+    src: url('./fonts/PPTelegraf-UltralightSlanted.otf') format('opentype');
+    font-display: swap;
+  }
+
+  /* PPRightDidone Fonts */
+
+@font-face {
+    font-family: 'PPRightDidone';
+    font-style: normal;
+    font-weight: 700; /* Compact Black */
+    src: url('./fonts/PPRightDidone-CompactBlack.otf') format('opentype');
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'PPRightDidone';
+    font-style: normal;
+    font-weight: 700; /* Compact Dark */
+    src: url('./fonts/PPRightDidone-CompactDark.otf') format('opentype');
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'PPRightDidone';
+    font-style: normal;
+    font-weight: 300; /* Light */
+    src: url('./fonts/PPRightDidone-Light.otf') format('opentype');
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'PPRightDidone';
+    font-style: normal;
+    font-weight: 500; /* Medium */
+    src: url('./fonts/PPRightDidone-Medium.otf') format('opentype');
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'PPRightDidone';
+    font-style: normal;
+    font-weight: 400; /* Narrow Light */
+    src: url('./fonts/PPRightDidone-NarrowLight.otf') format('opentype');
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'PPRightDidone';
+    font-style: normal;
+    font-weight: 600; /* Spatial Black */
+    src: url('./fonts/PPRightDidone-SpatialBlack.otf') format('opentype');
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'PPRightDidone';
+    font-style: normal;
+    font-weight: 400; /* Spatial Fine */
+    src: url('./fonts/PPRightDidone-SpatialFine.otf') format('opentype');
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'PPRightDidone';
+    font-style: normal;
+    font-weight: 600; /* Tall Fine */
+    src: url('./fonts/PPRightDidone-TallFine.otf') format('opentype');
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'PPRightDidone';
+    font-style: normal;
+    font-weight: 400; /* Tall Regular */
+    src: url('./fonts/PPRightDidone-TallRegular.otf') format('opentype');
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'PPRightDidone';
+    font-style: normal;
+    font-weight: 500; /* Tight Medium */
+    src: url('./fonts/PPRightDidone-TightMedium.otf') format('opentype');
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'PPRightDidone';
+    font-style: normal;
+    font-weight: 900; /* Wide Black */
+    src: url('./fonts/PPRightDidone-WideBlack.otf') format('opentype');
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'PPRightDidone';
+    font-style: normal;
+    font-weight: 500; /* Wide Medium */
+    src: url('./fonts/PPRightDidone-WideMedium.otf') format('opentype');
+    font-display: swap;
+  }

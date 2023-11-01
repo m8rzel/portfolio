@@ -1,0 +1,50 @@
+[{
+    "name": "n:ness - Software für Betriebliches Gesundheitsmanagement",
+    "type": "Website & Software",
+    "imageUrl": "/images/projects/nness.png"
+  },
+  {
+    "name": "dreamride - Bikepacking App",
+    "type": "Android & IOS",
+    "imageUrl": "/images/projects/dreamride.png"
+  },
+  {
+    "name": "Pedalerie Offenburg",
+    "type": "Website",
+    "imageUrl": "/images/projects/pedalerie.png"
+  },
+  {
+    "name": "Turnverein Lahr",
+    "type": "Website",
+    "imageUrl": "/images/projects/turnverein.png"
+  },
+  {
+    "name": "Jobyfind",
+    "type": "Android & IOS",
+    "imageUrl": "/images/projects/jobyfind.png"
+  },
+  {
+    "name": "Rapp Bauunternehmung",
+    "type": "Website",
+    "imageUrl": "/images/projects/rapp.png"
+  },
+  {
+    "name": "MH Rotec",
+    "type": "Website",
+    "imageUrl": "https://picsum.photos/400/405"
+  },
+  {
+    "name": "Theradoo",
+    "type": "Android & IOS",
+    "imageUrl": "https://picsum.photos/400/407"
+  },
+  {
+    "name": "Wika Fenster",
+    "type": "Website",
+    "imageUrl": "https://picsum.photos/400/408"
+  },
+  {
+    "name": "Microservices",
+    "type": "REST-API",
+    "imageUrl": "https://picsum.photos/400/409"
+  }]
