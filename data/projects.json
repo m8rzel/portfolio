@@ -1,50 +1,60 @@
 [{
     "name": "n:ness - Software für Betriebliches Gesundheitsmanagement",
     "type": "Website & Software",
-    "imageUrl": "/images/projects/nness.png"
+    "thumbnail": "/images/projects/nness.png",
+    "slug": "nness"
   },
   {
     "name": "dreamride - Bikepacking App",
     "type": "Android & IOS",
-    "imageUrl": "/images/projects/dreamride.png"
+    "thumbnail": "/images/projects/dreamride.png",
+    "slug": "dreamride"
   },
   {
     "name": "Pedalerie Offenburg",
     "type": "Website",
-    "imageUrl": "/images/projects/pedalerie.png"
+    "thumbnail": "/images/projects/pedalerie.png",
+    "slug": "pedalerie-offenburg"
   },
   {
     "name": "Turnverein Lahr",
     "type": "Website",
-    "imageUrl": "/images/projects/turnverein.png"
+    "thumbnail": "/images/projects/turnverein.png",
+    "slug": "turnverein-lahr"
   },
   {
     "name": "Jobyfind",
     "type": "Android & IOS",
-    "imageUrl": "/images/projects/jobyfind.png"
+    "thumbnail": "/images/projects/jobyfind.png",
+    "slug": "jobyfind"
   },
   {
     "name": "Rapp Bauunternehmung",
     "type": "Website",
-    "imageUrl": "/images/projects/rapp.png"
+    "thumbnail": "/images/projects/rapp.png",
+    "slug": "rapp"
   },
   {
     "name": "MH Rotec",
     "type": "Website",
-    "imageUrl": "https://picsum.photos/400/405"
+    "thumbnail": "/images/projects/mhrotec.png",
+    "slug": "mhrotec"
   },
   {
     "name": "Theradoo",
     "type": "Android & IOS",
-    "imageUrl": "https://picsum.photos/400/407"
+    "thumbnail": "/images/projects/theradoo.png",
+    "slug": "theradoo"
   },
   {
     "name": "Wika Fenster",
     "type": "Website",
-    "imageUrl": "https://picsum.photos/400/408"
+    "thumbnail": "/images/projects/wika.png",
+    "slug": "wika"
   },
   {
     "name": "Microservices",
     "type": "REST-API",
-    "imageUrl": "https://picsum.photos/400/409"
+    "thumbnail": "https://picsum.photos/400/409",
+    "slug": "microservices"
   }]

@@ -33,13 +33,13 @@ const posts = [
     href: '#',
     description:
       'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.',
-    imageUrl:
+    thumbnail:
       'https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3603&q=80',
     date: 'Mar 16, 2020',
     datetime: '2020-03-16',
     author: {
       name: 'Michael Foster',
-      imageUrl:
+      thumbnail:
         'https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
     },
   },
@@ -49,13 +49,13 @@ const posts = [
     href: '#',
     description:
       'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.',
-    imageUrl:
+    thumbnail:
       'https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3603&q=80',
     date: 'Mar 16, 2020',
     datetime: '2020-03-16',
     author: {
       name: 'Michael Foster',
-      imageUrl:
+      thumbnail:
         'https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
     },
   },
@@ -65,13 +65,13 @@ const posts = [
     href: '#',
     description:
       'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.',
-    imageUrl:
+    thumbnail:
       'https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3603&q=80',
     date: 'Mar 16, 2020',
     datetime: '2020-03-16',
     author: {
       name: 'Michael Foster',
-      imageUrl:
+      thumbnail:
         'https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
     },
   },
@@ -81,13 +81,13 @@ const posts = [
     href: '#',
     description:
       'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.',
-    imageUrl:
+    thumbnail:
       'https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3603&q=80',
     date: 'Mar 16, 2020',
     datetime: '2020-03-16',
     author: {
       name: 'Michael Foster',
-      imageUrl:
+      thumbnail:
         'https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
     },
 
@@ -98,13 +98,13 @@ const posts = [
     href: '#',
     description:
       'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.',
-    imageUrl:
+    thumbnail:
       'https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3603&q=80',
     date: 'Mar 16, 2020',
     datetime: '2020-03-16',
     author: {
       name: 'Michael Foster',
-      imageUrl:
+      thumbnail:
         'https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
     },
 
@@ -134,7 +134,7 @@ export default function Home() {
               Hey, I'ts <span className='font-display font-thin text-primary-main italic'>Marcel Wiskow.</span><br />Fullstack Developer
             </h1>
             <p className='m-0 font-body text-white font-thin text-center'>I've been working as a full stack <span className='font-medium'>web developer</span> for 6 years.<br /> I am based on <span className='font-medium'>Germany.</span></p>
-            <Link className='bg-primary-main px-16 py-4 text-xs hover:scale-[1.05] transition-all pointer-element' href={"/projects"}>Hire me</Link>
+            <Link className='bg-primary-main px-16 py-4 text-xs hover:scale-[1.05] transition-all pointer-element' href={"/projects"}>Contact me</Link>
           </div>
         </section>
         <section className="relative grid grid-cols-1 lg:grid-cols-3 grid-flow-row gap-6 items-center mx-auto sm:py-12 lg:py-24 px-8 max-w-3xl">
@@ -189,7 +189,7 @@ export default function Home() {
                 className="relative flex flex-col justify-end overflow-hidden group rounded-sm gap-5 hover:scale-105 transition-all"
               >
                 <div className='h-[420px] relative'>
-                  <img src={post.imageUrl} alt="" className="inset-0 -z-10 h-full w-full object-cover grayscale opacity-30 transition-all group-hover:grayscale-0 group-hover:opacity-70" />
+                  <img src={post.thumbnail} alt="" className="inset-0 -z-10 h-full w-full object-cover grayscale opacity-30 transition-all group-hover:grayscale-0 group-hover:opacity-70" />
                   <div className="absolute inset-0 -z-10 bg-gradient-to-t from-slate-900 via-slate-900/40" />
                   <div className="absolute inset-0 -z-10 rounded-2xl ring-1 ring-inset ring-slate-900/10" />
 
