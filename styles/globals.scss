@@ -125,3 +125,12 @@ body {
   justify-content: center;
   align-items: center;
 }
+
+.progress {
+  position: fixed;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background: #D2DE32;
+  bottom: 0px;
+}
