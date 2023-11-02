@@ -26,9 +26,7 @@ export default function ProjectCard({ project, isFeature, className }: ProjectCa
                 <div className='pointer-element'>
                     <p className='px-2 py-1 bg-white/30 backdrop-blur-xl text-white w-max rounded-full text-sm font-thin pointer-element'>{project.type}</p>
                     <h3 className="mt-3 text-xl font-semibold leading-6 text-white pointer-element">
-                        <a href={project.link!} className='pointer-element'>
                             {project.name}
-                        </a>
                     </h3>
                 </div>
                 <p className='pointer-element text-sm text-white opacity-80 line-clamp-3 truncate]'>After the avalanche, it took us a week to climb out. and i will strike down upon thee with great vengeance and furious anger those who too much shit this morning over this case to hand it over to your dumb ass. </p>

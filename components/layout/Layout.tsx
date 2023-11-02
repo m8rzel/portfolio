@@ -8,6 +8,7 @@ import {
   useTransform,
   MotionValue
 } from "framer-motion";
+import Navigation from './Navigation';
 
 interface LayoutProps{
     children: ReactNode
@@ -21,6 +22,7 @@ export default function Layout({children}: LayoutProps) {
   });
   return (
     <>
+    {/* <Navigation/> */}
     <Link href="/" className="flex justify-center items-center absolute top-5 left-5 gap-3 pointer-element">
         <div className='bg-white/10 rounded-full p-3'>
           <Bars3CenterLeftIcon width={20} height={20} className='text-gray-200' />

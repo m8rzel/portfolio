@@ -113,7 +113,6 @@ const posts = [
   // More posts...
 ]
 export default function Home() {
-  const scrollRef = useRef(null)
   const deviceType = useDeviceType();
   useEffect(() => {
     // if(typeof window !== 'undefined'){
@@ -168,7 +167,7 @@ export default function Home() {
               <ProjectCard project={projects[0]} isFeature />
               <div className='grid col-span-1 lg:col-span-2 grid-cols-1 gap-[24px] lg:grid-cols-2'>
                 {/* normal cards */}
-                {projects?.slice(1, 5).map((project, index) => (
+                {projects.slice(1, 5).map((project, index) => (
                   <ProjectCard project={project} />
                 ))
                 }
