@@ -169,3 +169,56 @@
     src: url('./fonts/PPRightDidone-WideMedium.otf') format('opentype');
     font-display: swap;
   }
+
+  @font-face {
+    font-family: 'PPRightDidone';
+    font-style: normal;
+    font-weight: 500; /* Wide Medium */
+    src: url('./fonts/PPRightDidone-WideMedium.otf') format('opentype');
+    font-display: swap;
+  }
+
+  /* PPPangaia */
+
+  @font-face {
+    font-family: 'PPPangaia';
+    font-style: normal;
+    font-weight: 100; /* Wide Medium */
+    src: url('./fonts/PPPangaia-Ultralight.otf') format('opentype');
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'PPPangaia';
+    font-style: italic;
+    font-weight: 100; /* Wide Medium */
+    src: url('./fonts/PPPangaia-UltralightItalic.otf') format('opentype');
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'PPPangaia';
+    font-style: normal;
+    font-weight: 400; /* Wide Medium */
+    src: url('./fonts/PPPangaia-Medium.otf') format('opentype');
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'PPPangaia';
+    font-style: italic;
+    font-weight: 400; /* Wide Medium */
+    src: url('./fonts/PPPangaia-MediumItalic.otf') format('opentype');
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'PPPangaia';
+    font-style: normal;
+    font-weight: 600; /* Wide Medium */
+    src: url('./fonts/PPPangaia-Bold.otf') format('opentype');
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'PPPangaia';
+    font-style: italic;
+    font-weight: 600; /* Wide Medium */
+    src: url('./fonts/PPPangaia-BoldItalic.otf') format('opentype');
+    font-display: swap;
+  }

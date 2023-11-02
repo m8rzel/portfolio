@@ -18,7 +18,9 @@ module.exports = {
     },
     fontFamily: {
       'body': ['PPTelegraf'],
-      'display': ['PPRightDidone'],
+      'display': ['PPPangaia'], 
+      // 'display'atk: ['PPRightDidone'],
+      
     },
   },
   plugins: [],
