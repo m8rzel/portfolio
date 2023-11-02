@@ -7,6 +7,7 @@ import Link from 'next/link';
 import Head from 'next/head';
 import projects from "@/data/projects.json"
 import { motion } from 'framer-motion';
+import useDeviceType from "@/hooks/useDeviceType"
 const categories = [
   {
     title: "Product<br/>Design",
@@ -113,6 +114,7 @@ const posts = [
 ]
 export default function Home() {
   const scrollRef = useRef(null)
+  const deviceType = useDeviceType();
   useEffect(() => {
     // if(typeof window !== 'undefined'){
     start();
@@ -138,10 +140,10 @@ export default function Home() {
           </div>
         </section>
         <section className="relative grid grid-cols-1 lg:grid-cols-3 grid-flow-row gap-6 items-center mx-auto sm:py-12 lg:py-24 px-8 max-w-3xl">
-          <svg className='absolute top-0 bottom-0 m-auto w-[120%] -left-[10%] right-0 lg:bottom-20' xmlns="http://www.w3.org/2000/svg" version="1.1" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="0 0 800 400"><path className="hidden" id="hero-line" d="M0.8968609571456909,351.56951904296875C38.39760791023572,326.81316426595055,150.21823401411376,199.26756703694662,230.49327087402344,200C310.7683077339331,200.73243296305338,400.5291407775879,363.08519332885743,492.3766784667969,356.0538024902344C584.2242161560058,349.0224116516113,743.7518864949544,189.4708469136556,792.8251342773438,156.95066833496094" fill="none" stroke-width="14" stroke="#D2DE32" stroke-linecap="round"></path><defs><linearGradient id="SvgjsLinearGradient1000"><stop stop-color="hsl(37, 99%, 67%)" offset="0"></stop><stop stop-color="hsl(316, 73%, 52%)" offset="1"></stop></linearGradient></defs></svg>
+          <svg className='absolute top-0 bottom-0 m-auto w-[120%] -left-[10%] right-0 lg:bottom-20' xmlns="http://www.w3.org/2000/svg" version="1.1" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="0 0 800 400"><path className="hidden" id="hero-line" d="M0.8968609571456909,351.56951904296875C38.39760791023572,326.81316426595055,150.21823401411376,199.26756703694662,230.49327087402344,200C310.7683077339331,200.73243296305338,400.5291407775879,363.08519332885743,492.3766784667969,356.0538024902344C584.2242161560058,349.0224116516113,743.7518864949544,189.4708469136556,792.8251342773438,156.95066833496094" fill="none" stroke-width="14" stroke="#D2DE32" stroke-linecap="round"></path><defs><linearGradient id="SvgjsLinearGradient1000"><stop stopColor="hsl(37, 99%, 67%)" offset="0"></stop><stop stopColor="hsl(316, 73%, 52%)" offset="1"></stop></linearGradient></defs></svg>
           {
             categories.map((item, index) => (
-              <motion.div initial={{ translateY: 200 + index * 50 }}
+              <motion.div initial={{ translateY: deviceType === "Desktop" ? 200 + index * 30 : 0 }}
                 whileInView={{ translateY: 0 }} className='w-full hover:scale-105 transition-all h-[296px] relative flex justify-end items-start flex-col gap-3 backdrop-blur-xl bg-white/10 p-6 cursor-pointer rounded-sm pointer-element'>
                 <item.icon width={28} height={28} className='text-gray-200 absolute top-6 left-6' />
                 <div className='m-0 text-white text-3xl text-left' dangerouslySetInnerHTML={{ __html: item.title }} />
@@ -228,7 +230,7 @@ export default function Home() {
               </div>
             </div>
             <form action="#" method="POST" className="px-6 pb-24 pt-20 sm:pb-32 lg:px-8 lg:py-48 relative">
-              <svg className='absolute rotate-[-20deg] bottom-0 top-0 m-auto w-[150%] -left-20' xmlns="http://www.w3.org/2000/svg" version="1.1" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="0 0 800 400"><path id="contact-line" d="M0.8968609571456909,351.56951904296875C38.39760791023572,326.81316426595055,150.21823401411376,199.26756703694662,230.49327087402344,200C310.7683077339331,200.73243296305338,400.5291407775879,363.08519332885743,492.3766784667969,356.0538024902344C584.2242161560058,349.0224116516113,743.7518864949544,189.4708469136556,792.8251342773438,156.95066833496094" fill="none" stroke-width="20" stroke="#D2DE32" stroke-linecap="round"></path><defs><linearGradient id="SvgjsLinearGradient1000"><stop stop-color="hsl(37, 99%, 67%)" offset="0"></stop><stop stop-color="hsl(316, 73%, 52%)" offset="1"></stop></linearGradient></defs></svg>
+              <svg className='absolute rotate-[-20deg] bottom-0 top-0 m-auto w-[150%] -left-20' xmlns="http://www.w3.org/2000/svg" version="1.1" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="0 0 800 400"><path id="contact-line" d="M0.8968609571456909,351.56951904296875C38.39760791023572,326.81316426595055,150.21823401411376,199.26756703694662,230.49327087402344,200C310.7683077339331,200.73243296305338,400.5291407775879,363.08519332885743,492.3766784667969,356.0538024902344C584.2242161560058,349.0224116516113,743.7518864949544,189.4708469136556,792.8251342773438,156.95066833496094" fill="none" stroke-width="20" stroke="#D2DE32" stroke-linecap="round"></path><defs><linearGradient id="SvgjsLinearGradient1000"><stop stopColor="hsl(37, 99%, 67%)" offset="0"></stop><stop stopColor="hsl(316, 73%, 52%)" offset="1"></stop></linearGradient></defs></svg>
               <div className="mx-auto max-w-xl lg:mr-0 lg:max-w-lg backdrop-blur-xl bg-white/10 p-10">
                 <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
                   <div>
