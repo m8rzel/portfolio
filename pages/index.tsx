@@ -5,7 +5,7 @@ import { start } from "@/animations/index.js";
 import ProjectCard from '@/components/ProjectCard';
 import Link from 'next/link';
 import Head from 'next/head';
-import projects from "@/data/projects.json"
+import projects from "@/data/projects.js"
 import { motion } from 'framer-motion';
 import useDeviceType from "@/hooks/useDeviceType"
 const categories = [
@@ -132,17 +132,17 @@ export default function Home() {
               <Image src="/images/marcel1-1.jpg" alt="Avatar" width={250} height={300} />
             </div>
             <h1 className="font-body pt-4 text-4xl font-normal text-white sm:text-6xl text-center -mt-12 shadow-2xl bg-gradient-to-t from-black to-black/0 from-80%">
-              Hey, I'ts <span className='font-display font-thin text-primary-main italic'>Marcel Wiskow.</span><br />Fullstack Developer
+              Hey, I'ts <span className='font-display italic text-primary-main '>Marcel Wiskow.</span><br />Fullstack Developer
             </h1>
             <p className='m-0 font-body text-white font-thin text-center'>I've been working as a full stack <span className='font-medium'>web developer</span> for 6 years.<br /> I am based on <span className='font-medium'>Germany.</span></p>
             <Link className='bg-primary-main px-16 py-4 text-xs hover:scale-[1.05] transition-all pointer-element' href={"/projects"}>Contact me</Link>
           </div>
         </section>
-        <section className="relative grid grid-cols-1 lg:grid-cols-3 grid-flow-row gap-6 items-center mx-auto sm:py-12 lg:py-24 px-8 max-w-3xl">
-          <svg className='absolute top-0 bottom-0 m-auto w-[120%] -left-[10%] right-0 lg:bottom-20' xmlns="http://www.w3.org/2000/svg" version="1.1" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="0 0 800 400"><path className="hidden" id="hero-line" d="M0.8968609571456909,351.56951904296875C38.39760791023572,326.81316426595055,150.21823401411376,199.26756703694662,230.49327087402344,200C310.7683077339331,200.73243296305338,400.5291407775879,363.08519332885743,492.3766784667969,356.0538024902344C584.2242161560058,349.0224116516113,743.7518864949544,189.4708469136556,792.8251342773438,156.95066833496094" fill="none" stroke-width="14" stroke="#D2DE32" stroke-linecap="round"></path><defs><linearGradient id="SvgjsLinearGradient1000"><stop stopColor="hsl(37, 99%, 67%)" offset="0"></stop><stop stopColor="hsl(316, 73%, 52%)" offset="1"></stop></linearGradient></defs></svg>
+        <section data-scroll data-scroll-speed="0.1" className="relative grid grid-cols-1 lg:grid-cols-3 grid-flow-row gap-6 items-center mx-auto sm:py-12 lg:py-24 px-8 max-w-3xl">
+          <svg data-scroll data-scroll-speed="-0.04" className='absolute top-0 bottom-0 m-auto w-[120%] -left-[10%] right-0 lg:bottom-20' xmlns="http://www.w3.org/2000/svg" version="1.1" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="0 0 800 400"><path className="hidden" id="hero-line" d="M0.8968609571456909,351.56951904296875C38.39760791023572,326.81316426595055,150.21823401411376,199.26756703694662,230.49327087402344,200C310.7683077339331,200.73243296305338,400.5291407775879,363.08519332885743,492.3766784667969,356.0538024902344C584.2242161560058,349.0224116516113,743.7518864949544,189.4708469136556,792.8251342773438,156.95066833496094" fill="none" stroke-width="14" stroke="#D2DE32" stroke-linecap="round"></path><defs><linearGradient id="SvgjsLinearGradient1000"><stop stopColor="hsl(37, 99%, 67%)" offset="0"></stop><stop stopColor="hsl(316, 73%, 52%)" offset="1"></stop></linearGradient></defs></svg>
           {
             categories.map((item, index) => (
-              <div data-scroll data-scroll-speed={index/10} data-scroll-direction="top" className='w-full hover:scale-105 transition-all h-[296px] relative flex justify-end items-start flex-col gap-3 backdrop-blur-xl bg-white/10 p-6 cursor-pointer rounded-sm pointer-element'>
+              <div className='w-full hover:scale-105 transition-all h-[296px] relative flex justify-end items-start flex-col gap-3 backdrop-blur-xl bg-white/10 p-6 cursor-pointer rounded-sm pointer-element'>
                 <item.icon width={28} height={28} className='text-gray-200 absolute top-6 left-6' />
                 <div className='m-0 text-white text-3xl text-left' dangerouslySetInnerHTML={{ __html: item.title }} />
                 <span className='text-gray-200 text-xs font-thin text-left'>{item.projects} Projects</span>
@@ -152,9 +152,9 @@ export default function Home() {
         </section>
         <section className="py-24 sm:py-32">
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
-            <div className="flex flex-col gap-6 sm:flex-row justify-between">
+            <div data-scroll data-scroll-speed="0.08" className="flex flex-col gap-6 sm:flex-row justify-between">
               <div className='flex flex-col gap-2 sm:gap-6 sm:flex-row'>
-                <p className="relative z-1 mt-2 text-3xl leading-8 text-primary-main font-display font-thin italic">
+                <p  className="relative z-1 mt-2 text-3xl leading-8 text-primary-main font-display font-thin italic">
                   Works
                 </p>
                 <h2 className="text-4xl font-medium text-white sm:text-6xl">My beautiful<br />Projects</h2>

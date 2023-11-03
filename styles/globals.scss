@@ -10,6 +10,8 @@ body {
   background-color: black;
   overflow-x: hidden;
   cursor: none;
+  ::-moz-selection { background: #D2DE32; color: #000; }
+	::selection { background: #D2DE32; color: #000; }
 }
 
 #custom-cursor{
@@ -27,7 +29,7 @@ body {
   content: "";
   /* you can control opacity of noise  */
   opacity: .05;  
-  z-index: 2000;
+  z-index: 20000;
   pointer-events: none;
   background: url(/images/noise.gif);
 }
@@ -111,6 +113,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 9999;
 }
 
 .slide-out{
@@ -124,6 +127,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 9999;
 }
 
 .progress {

@@ -1,13 +1,16 @@
 import '@/styles/globals.scss'
+import '@/styles/lenis.css'
 import type { AppProps } from 'next/app'
-import { useEffect, useRef, useState } from 'react'
+import { useEffect, useLayoutEffect, useRef, useState } from 'react'
 import { start } from "@/animations/transition"
 import { useRouter } from 'next/router'
 import Layout from '@/components/layout/Layout'
 import pages from "@/data/pages.json"
 import { motion, AnimatePresence, animate } from 'framer-motion';
+import { Analytics } from '@vercel/analytics/react';
 export default function App({ Component, pageProps }: AppProps) {
   const router = useRouter();
+  const [loading, setLoading] = useState(true)
   const [pageName, setPageName] = useState<string>("Home");
   useEffect(() => {
     start()
@@ -43,11 +46,12 @@ export default function App({ Component, pageProps }: AppProps) {
   }, [])
 
   useEffect(() => {
-    (async () => {
-      const LocomotiveScroll = (await import("locomotive-scroll")).default;
-      const locomotiveScroll = new LocomotiveScroll();
-    })();
-  }, []);
+    setTimeout(() => {
+      setLoading(false)
+    }, 2000)
+  }, [])
+
+
 
   return (
     <>
@@ -57,6 +61,7 @@ export default function App({ Component, pageProps }: AppProps) {
             <div className="noise"></div>
             <div id='custom-cursor'></div>
             <Component {...pageProps} />
+            <Analytics />
             <motion.div
               className='slide-in'
               initial={{ scaleY: 0 }}
@@ -78,6 +83,10 @@ export default function App({ Component, pageProps }: AppProps) {
             </motion.div>
           </Layout>
         </motion.div>
+        {loading && <div className='z-[10999] fixed top-0 left-0 h-screen w-screen bg-primary-main flex justify-center items-center font-extrabold text-8xl text-black text-center flex-col gap-3'>
+          Loading...<br />
+          <span className='font-display text-5xl'>Website still in progress. Final Release: 21.11.23</span>
+        </div>}
       </AnimatePresence>
     </>
   )

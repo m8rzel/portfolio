@@ -1,7 +1,7 @@
 import ProjectCard from '@/components/ProjectCard'
 import Link from 'next/link'
 import React, { useEffect, useState } from 'react'
-import projects from "@/data/projects.json"
+import projects from "@/data/projects.js"
 import { ProjectStructure } from '@/interfaces/Project'
 
 export default function Projects() {
