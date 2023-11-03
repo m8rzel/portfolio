@@ -42,36 +42,43 @@ export default function App({ Component, pageProps }: AppProps) {
     })
   }, [])
 
-
+  useEffect(() => {
+    (async () => {
+      const LocomotiveScroll = (await import("locomotive-scroll")).default;
+      const locomotiveScroll = new LocomotiveScroll();
+    })();
+  }, []);
 
   return (
-    <AnimatePresence mode="wait">
-      <motion.div key={router.pathname}>
-        <Layout>
-          <div className="noise"></div>
-          <div id='custom-cursor'></div>
-          <Component {...pageProps} />
-          <motion.div
-            className='slide-in'
-            initial={{ scaleY: 0 }}
-            animate={{ scaleY: 0 }}
-            exit={{ scaleY: 1 }}
-            transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
+    <>
+      <AnimatePresence mode="wait">
+        <motion.div key={router.pathname}>
+          <Layout>
+            <div className="noise"></div>
+            <div id='custom-cursor'></div>
+            <Component {...pageProps} />
+            <motion.div
+              className='slide-in'
+              initial={{ scaleY: 0 }}
+              animate={{ scaleY: 0 }}
+              exit={{ scaleY: 1 }}
+              transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
 
-          >
-            <p className='text-6xl md:text-8xl text-black font-bold'>{pageName}</p>
-          </motion.div>
-          <motion.div
-            className='slide-out'
-            initial={{ scaleY: 1 }}
-            animate={{ scaleY: 0 }}
-            exit={{ scaleY: 0 }}
-            transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
+            >
+              <p className='text-6xl md:text-8xl text-black font-bold'>{pageName}</p>
+            </motion.div>
+            <motion.div
+              className='slide-out'
+              initial={{ scaleY: 1 }}
+              animate={{ scaleY: 0 }}
+              exit={{ scaleY: 0 }}
+              transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
 
-          >
-          </motion.div>
-        </Layout>
-      </motion.div>
-    </AnimatePresence>
+            >
+            </motion.div>
+          </Layout>
+        </motion.div>
+      </AnimatePresence>
+    </>
   )
 }
