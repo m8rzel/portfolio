@@ -1,15 +1,29 @@
-import React from 'react'
+import React, { useEffect, useMemo } from 'react'
 import projects from "@/data/projects.js"
 import { GetStaticProps } from 'next'
 import { ProjectStructure } from '@/interfaces/Project'
 import Image from 'next/image'
-
+import { start } from '@/animations/project'
+import { motion } from 'framer-motion';
 interface ProjectProps {
   project: ProjectStructure
 }
+
 export default function Project({ project }: ProjectProps) {
   console.log(project)
-  
+
+  let test = 1
+
+  useEffect(() => {
+    if(typeof window !== 'undefined'){
+      if(test === 1){
+        test=2;
+        console.log("TEST")
+        start();
+      }
+    }
+    return
+  }, [])
   return (
     <>
       <section className='w-screen h-[800px] justify-center flex flex-col gap-6 items-start relative -z-1'>
@@ -20,7 +34,7 @@ export default function Project({ project }: ProjectProps) {
           <p className='px-2 py-1 bg-white/20 backdrop-blur-xl text-white w-max rounded-full text-sm lg:text-lg font-thin'>{project.type}</p>
           <h1 className='max-w-4xl text-white text-left font-extrabold text-2xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl'><span className='font-display font-bold text-primary-main italic'>{project.name.split(" ")[0]}</span>{project.name.replace(project.name.split(" ")[0], "")}</h1>
         </div>
-        <div className="h-screen">
+        <div className="pt-2 pb-8">
           <div data-scroll data-scroll-speed="0.1" className='flex flex-wrap gap-3 max-w-3xl'>
             {
               project?.technologies?.map((technology, index) => (
@@ -29,7 +43,20 @@ export default function Project({ project }: ProjectProps) {
             }
           </div>
         </div>
+        <div className='flex justify-center h-screen' id="gallery">
+          <div className="gap-5 flex items-center h-full w-full" id="scroller">
+            {
+              [0, 1, 2, 3, 4, 5, 6, 7, 8, 9].map((item, index) => (
+                <div className='w-[1000px] h-[700px] image flex-shrink-0 relative'>
+                  <img className='w-full h-full object-cover' alt="test" src={`https://picsum.photos/1000/70${index}`} />
+                </div>
+              ))
+            }
+          </div>
+        </div>
+        <div className='h-screen'>
 
+        </div>
       </section>
     </>
   )
