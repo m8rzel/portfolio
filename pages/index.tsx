@@ -135,7 +135,7 @@ export default function Home() {
               Hey, I'ts <span className='font-display italic text-primary-main '>Marcel Wiskow.</span><br />Fullstack Developer
             </h1>
             <p className='m-0 font-body text-white font-thin text-center'>I've been working as a full stack <span className='font-medium'>web developer</span> for 6 years.<br /> I am based on <span className='font-medium'>Germany.</span></p>
-            <Link className='bg-primary-main px-16 py-4 text-xs hover:scale-[1.05] transition-all pointer-element' href={"/projects"}>Contact me</Link>
+            <Link className='bg-primary-main px-16 py-4 text-xs hover:scale-[1.05] transition-all pointer-element' href={"#contact"}>Contact me</Link>
           </div>
         </section>
         <section data-scroll data-scroll-speed="0.1" className="relative grid grid-cols-1 lg:grid-cols-3 grid-flow-row gap-6 items-center mx-auto sm:py-12 lg:py-24 px-8 max-w-3xl">
@@ -211,7 +211,7 @@ export default function Home() {
         </div>
       </section> */}
         {/* contact section */}
-        <section className="relative">
+        <section className="relative" id="contact">
           <div className="mx-auto grid max-w-7xl grid-cols-1 lg:grid-cols-2">
             <div className="relative px-6 pb-20 pt-24 sm:pt-32 lg:static lg:px-8 lg:py-48">
               <div className="mx-auto max-w-xl lg:mx-0 lg:max-w-lg">
@@ -227,7 +227,7 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            <form action="#" method="POST" className="px-6 pb-24 pt-20 sm:pb-32 lg:px-8 lg:py-48 relative">
+            <form action="https://submit-form.com/vZOLaOBn" className="px-6 pb-24 pt-20 sm:pb-32 lg:px-8 lg:py-48 relative">
               <svg className='absolute rotate-[-20deg] bottom-0 top-0 m-auto w-[150%] -left-20' xmlns="http://www.w3.org/2000/svg" version="1.1" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="0 0 800 400"><path id="contact-line" d="M0.8968609571456909,351.56951904296875C38.39760791023572,326.81316426595055,150.21823401411376,199.26756703694662,230.49327087402344,200C310.7683077339331,200.73243296305338,400.5291407775879,363.08519332885743,492.3766784667969,356.0538024902344C584.2242161560058,349.0224116516113,743.7518864949544,189.4708469136556,792.8251342773438,156.95066833496094" fill="none" stroke-width="20" stroke="#D2DE32" stroke-linecap="round"></path><defs><linearGradient id="SvgjsLinearGradient1000"><stop stopColor="hsl(37, 99%, 67%)" offset="0"></stop><stop stopColor="hsl(316, 73%, 52%)" offset="1"></stop></linearGradient></defs></svg>
               <div className="mx-auto max-w-xl lg:mr-0 lg:max-w-lg backdrop-blur-xl bg-white/10 p-10">
                 <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
@@ -241,6 +241,7 @@ export default function Home() {
                         name="first-name"
                         id="first-name"
                         autoComplete="given-name"
+                        required
                         className="outline-none block w-full rounded-sm border-0 bg-white/5 px-3.5 py-2 text-white shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-primary-main sm:text-sm sm:leading-6"
                       />
                     </div>
@@ -255,6 +256,7 @@ export default function Home() {
                         name="last-name"
                         id="last-name"
                         autoComplete="family-name"
+                        required
                         className="outline-none block w-full rounded-sm border-0 bg-white/5 px-3.5 py-2 text-white shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-primary-main sm:text-sm sm:leading-6"
                       />
                     </div>
@@ -269,6 +271,7 @@ export default function Home() {
                         name="email"
                         id="email"
                         autoComplete="email"
+                        required
                         className="outline-none block w-full rounded-sm border-0 bg-white/5 px-3.5 py-2 text-white shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-primary-main sm:text-sm sm:leading-6"
                       />
                     </div>
@@ -283,6 +286,7 @@ export default function Home() {
                         name="phone-number"
                         id="phone-number"
                         autoComplete="tel"
+                        required
                         className="outline-none block w-full rounded-sm border-0 bg-white/5 px-3.5 py-2 text-white shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-primary-main sm:text-sm sm:leading-6"
                       />
                     </div>
@@ -296,6 +300,7 @@ export default function Home() {
                         name="message"
                         id="message"
                         rows={4}
+                        required
                         className="outline-none block w-full rounded-sm border-0 bg-white/5 px-3.5 py-2 text-white shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-primary-main sm:text-sm sm:leading-6"
                         defaultValue={''}
                       />
