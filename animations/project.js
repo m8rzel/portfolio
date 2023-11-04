@@ -15,7 +15,7 @@ export function start() {
     scrub: true,
     invalidateOnRefresh: true,
     start: "top top",
-    end: () => scroller.scrollWidth - window.innerWidth - 0,
+    end: () => scroller.scrollWidth,
   });
 
   let scrollWrapAmount = scroller.offsetWidth;

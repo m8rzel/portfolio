@@ -4,5 +4,6 @@ export interface ProjectStructure{
     link?: string;
     thumbnail: string;
     slug: string;
-    technologies?: string[]
+    technologies?: string[],
+    gallery?: string[];
 }

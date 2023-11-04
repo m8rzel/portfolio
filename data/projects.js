@@ -17,6 +17,13 @@ const projects = [
       "Prismic",
       "CSS",
     ],
+    gallery: [
+      "/images/projects/nness/1.png",
+      "/images/projects/nness/2.png",
+      "/images/projects/nness/3.png",
+      "/images/projects/nness/4.png",
+      "/images/projects/nness/5.png",
+    ]
   },
   {
     name: "dreamride - Bikepacking App",

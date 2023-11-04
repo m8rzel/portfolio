@@ -46,9 +46,9 @@ export default function Project({ project }: ProjectProps) {
         <div className='flex justify-center h-screen' id="gallery">
           <div className="gap-5 flex items-center h-full w-full" id="scroller">
             {
-              [0, 1, 2, 3, 4, 5, 6, 7, 8, 9].map((item, index) => (
-                <div className='w-[1000px] h-[700px] image flex-shrink-0 relative'>
-                  <img className='w-full h-full object-cover' alt="test" src={`https://picsum.photos/1000/70${index}`} />
+              project?.gallery?.map((url, index) => (
+                <div className='w-auto h-[700px] image flex-shrink-0 relative opacity-50 grayscale hover:opacity-100 hover:grayscale-0 transition-all'>
+                  <Image className='w-auto h-full object-contain relative rounded-xl' width={2000} height={2000} alt="test" src={url} />
                 </div>
               ))
             }

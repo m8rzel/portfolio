@@ -83,7 +83,7 @@ export default function App({ Component, pageProps }: AppProps) {
             </motion.div>
           </Layout>
         </motion.div>
-        {loading && <div className='z-[10999] fixed top-0 left-0 h-screen w-screen bg-primary-main flex justify-center items-center font-extrabold text-8xl text-black text-center flex-col gap-3'>
+        {loading && <div className='z-[10999] fixed top-0 left-0 h-screen w-screen bg-primary-main flex justify-center items-center font-extrabold text-6xl md:text-8xl text-black text-center flex-col gap-3'>
           Loading...<br />
           <span className='font-display text-5xl'>Website still in progress. Final Release: 21.11.23</span>
         </div>}
