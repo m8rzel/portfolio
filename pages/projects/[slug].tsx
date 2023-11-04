@@ -54,9 +54,9 @@ export default function Project({ project }: ProjectProps) {
             }
           </div>
         </div>
-        <div className='h-screen'>
+        {/* <div className='h-screen'>
 
-        </div>
+        </div> */}
       </section>
     </>
   )
