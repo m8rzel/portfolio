@@ -70,6 +70,13 @@ const projects = [
       "DatoCMS",
       "CSS",
     ],
+    gallery: [
+      "/images/projects/turnverein/1.png",
+      "/images/projects/turnverein/2.png",
+      "/images/projects/turnverein/3.png",
+      "/images/projects/turnverein/4.png",
+      "/images/projects/turnverein/5.png",
+    ]
   },
   {
     name: "Jobyfind",

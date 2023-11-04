@@ -10,7 +10,7 @@ interface ProjectProps {
 }
 
 export default function Project({ project }: ProjectProps) {
-  console.log(project)
+  // console.log(project)
 
   let test = 1
 
@@ -66,7 +66,7 @@ export default function Project({ project }: ProjectProps) {
 export const getStaticProps: GetStaticProps = async ({ params, previewData }) => {
 
   const project = projects.find((item) => item.slug === params?.slug)
-  console.log("PROJECT: ", project)
+  // console.log("PROJECT: ", project)
 
   return {
     props: {
